@@ -1,2 +1,2 @@
-# scrimba_course_AirBnB_Clone
-# scrimba_course_AirBnB_Clone
+# Scrimba Course
+## AirBnB clone
