@@ -1,20 +1,18 @@
-import React from 'React';
+import React from 'react';
+import CardLogo from '../images/katie-zaferes.png';
+import Star from '../images/star.png';
 
 export default function Card() {
   return (
-    <div className='main'>
-      <div className='experiences'>
-        <div className='exp'>
-          <div className='exp__img'>
-            <p className='lackOfName'></p>
-          </div>
-          <div className='exp__content'>
-            <p className='rating'></p>
-            <p className='description'></p>
-            <p className='price'></p>
-          </div>
+    <section className='cards'>
+      <div className='card'>
+        <img className='card__img' src={CardLogo}></img>
+        <div className='card__content'>
+          <img className='card__rating' src={Star}></img>
+          <p className='card__description'></p>
+          <p className='card__price'></p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
