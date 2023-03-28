@@ -15,69 +15,82 @@
 
 body {
   display: flex;
-  width: 100vw;
-  height: 100vh;
   font-family: 'Poppins', sans-serif;
-  
-  background-color: lightgrey;
 
-  justify-content: center;
-  align-items: center;
-  
-  
-}
-
-.container {
-  width: 550px;
-  height: fit-content;
-  
-  
-  .nav {
-    display: flex;
-    width: 100%;
-    height: 70px;
-    align-items: center; 
-    padding: 0 2rem 0 2rem;
-    border-radius: 10px 10px 0 0;
-    background-color: #ffff;
-    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
-
-    &__logo {
-      width: 82px;
-      height: 26px;
-    }
-  }
-
-  .hero {
-    display: grid;
-    width: 100%;
+  .container {
+    width: 550px;
     height: fit-content;
-    padding: 2.6rem 3.6rem;
-    
-    background-color: #ffff;
-
-
-    &__img {
-      width: 395px;
-      height: 232px;
-      object-fit: cover;
-      margin: auto;
-    }
-
-    &__title {
-      font-size: 3.6rem;
-      margin-top: 3.2rem;
-    }
-
-    &__text {
-      font-size: 1.6rem;
-      inline-size: 320px;
-      line-height: 2rem;
-      font-weight: 500;
-      letter-spacing: 0.1rem;
-      margin-bottom: 2rem;
-    }
-  }
   
+    .nav {
+      display: flex;
+      width: 100%;
+      height: 70px;
+      align-items: center; 
+      padding: 20px 36px;
+      border-radius: 10px 10px 0 0;
+      background-color: #ffff;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
+  
+      &__logo {
+        max-width: 100px;
+      }
+    }
+  
+    .main-wrapper {
+  
+      background-color: #ffff;
 
+      section {
+        padding: 2rem;
+      }
+  
+      .hero {
+        display: flex;
+        flex-direction: column;
+        
+        &__img {
+         max-width: 40rem;
+         align-self: center;
+         //Alternativ to "align-self":
+         /*  object-fit: cover;
+          margin: auto; */
+        }
+    
+        &__title {
+          font-size: 3.6rem;
+          margin-top: 3.2rem;
+          padding: 1.6rem;
+          
+        }
+    
+        &__text {
+          font-size: 1.6rem;
+          inline-size: 320px;
+          line-height: 2rem;
+          font-weight: 500;
+          letter-spacing: 0.1rem;
+          margin-bottom: 2rem;
+          padding: 0 1.6rem;
+        }
+      }
+    
+      .card {
+        width: 176px;
+        height: fit-content;
+        
+        background-clip: 
+        
+    
+        &__img {
+          width: 100%;
+          height: 235px;
+          object-fit: fill;
+          border-radius: 1rem;
+        }
+      }
+    }
+  } 
 }
+
+
+  
