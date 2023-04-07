@@ -84,7 +84,6 @@ body {
           height: 235px;
           object-fit: fill;
           border-radius: 1rem;
-          
         }
 
         &__content {
@@ -97,7 +96,6 @@ body {
             align-items: center;
 
             &__symbol {
-              width: 1.2rem;
               height: 1.2rem;
               margin-right: 0.5rem;
               
@@ -108,10 +106,9 @@ body {
 
               span {
                 margin-left: 0.5rem;
-                color: rgba(0, 0, 0, 0.40)
+                color: rgba(0, 0, 0, 0.40);
+                
               }
-             
-              
             }
           }
         }
@@ -123,11 +120,13 @@ body {
 
         &__price {
           font-size: 1.2rem;
-          
-          span {
-            font-weight: 800;
-          }
+          font-weight: 800;
         }
+
+        span {
+          font-size: 1.2rem;
+        }
+        
       }
     }
   } 
