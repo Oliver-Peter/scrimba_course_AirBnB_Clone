@@ -16,6 +16,7 @@
 body {
   display: flex;
   font-family: 'Poppins', sans-serif;
+  
 
   .container {
     width: 550px;
@@ -73,10 +74,20 @@ body {
           padding: 0 1.6rem;
         }
       }
+
+      .cards-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        overflow-x: auto;
+      }
     
       .card {
-        width: 176px;
-        height: fit-content;
+        width: 175px;
+        font-size: 1.2rem;
+        flex: 0 0 auto;  
+        display: flex;          
+        flex-direction: column; 
         
   
         &__img {
@@ -98,11 +109,9 @@ body {
             &__symbol {
               height: 1.2rem;
               margin-right: 0.5rem;
-              
             }
 
             &__text {
-              font-size: 1.2rem;
 
               span {
                 margin-left: 0.5rem;
@@ -114,19 +123,12 @@ body {
         }
 
         &__description {
-          font-size: 1.2rem;
           font-weight: 400;
         }
 
         &__price {
-          font-size: 1.2rem;
           font-weight: 800;
         }
-
-        span {
-          font-size: 1.2rem;
-        }
-        
       }
     }
   } 
